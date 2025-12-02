@@ -47,6 +47,12 @@ php artisan optimize:clear
             'journal_mode' => null,
             'synchronous' => null,
             'transaction_mode' => 'DEFERRED',
+            'mongodb' => [
+    'driver'   => 'mongodb',
+    'dsn'      => env('MONGO_URI'),
+    'database' => env('MONGO_DB'),
+],
+
         ],
 
         'mysql' => [
